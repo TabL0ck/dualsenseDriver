@@ -1,0 +1,16 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-I/home/lena/Documents/dualSenseDriver/Source/main",
+      "-I/home/lena/Documents/dualSenseDriver/Source/dualsense",
+      "-o",
+      "/home/lena/Documents/dualSenseDriver/Build/main/dualsenseDriver.o",
+      "/home/lena/Documents/dualSenseDriver/Source/main/dualsenseDriver.cpp"
+    ],
+    "directory": "/home/lena/Documents/dualSenseDriver/Build",
+    "file": "/home/lena/Documents/dualSenseDriver/Source/main/dualsenseDriver.cpp",
+    "output": "/home/lena/Documents/dualSenseDriver/Build/main/dualsenseDriver.o"
+  }
+]
