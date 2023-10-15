@@ -10,7 +10,7 @@ TARGET = dualsenseDriver
 VERBOSE = TRUE
 
 # Create the list of directories
-DIRS = main dualsense
+DIRS = main dualsense utils
 SOURCEDIRS = $(foreach dir, $(DIRS), $(addprefix $(SOURCEDIR)/, $(dir)))
 TARGETDIRS = $(foreach dir, $(DIRS), $(addprefix $(BUILDDIR)/, $(dir)))
 
