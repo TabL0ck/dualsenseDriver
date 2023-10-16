@@ -1,4 +1,5 @@
 #include "dualsense.hpp"
+#include <cstdio>
 
 bool dualsense_init(dualsense *ds, const char *serial) {
   bool retVal = false;
@@ -71,4 +72,21 @@ bool check_connection(dualsense *ds) {
     return false;
 
   return compare_serial(ds->MAC_address, devs->serial_number);
+}
+
+int batteryCharge(dualsense *ds) {
+  int retval = -1;
+  uint8_t data[DS_INPUT_REPORT_BT_SIZE];
+  int res = hid_read_timeout(ds->dev, data, sizeof(data), DS_READ_TIMEOUT);
+
+  if (res <= 0) {
+    if (res == 0)
+      fprintf(stderr, "Timeout waiting for report\n");
+    else
+      fprintf(stderr, "Failed to read report %ls\n", hid_error(ds->dev));
+
+    return -1;
+  }
+
+  return retval;
 }
