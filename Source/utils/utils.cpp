@@ -16,3 +16,8 @@ bool compare_serial(const char *s, const wchar_t *dev) {
 
   return true;
 }
+
+void printStructByBytes(uint8_t *obj, uint32_t len) {
+  for (uint32_t i = 0; i < len; i++)
+    std::cout << i << ": " << (uint32_t)obj[i] << std::endl;
+}

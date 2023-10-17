@@ -1,0 +1,47 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-I/home/Artem/Documents/projects/dualsenseDriver/Source/main",
+      "-I/home/Artem/Documents/projects/dualsenseDriver/Source/dualsense",
+      "-I/home/Artem/Documents/projects/dualsenseDriver/Source/utils",
+      "-o",
+      "/home/Artem/Documents/projects/dualsenseDriver/Build/main/dualsenseDriver.o",
+      "/home/Artem/Documents/projects/dualsenseDriver/Source/main/dualsenseDriver.cpp"
+    ],
+    "directory": "/home/Artem/Documents/projects/dualsenseDriver/Build",
+    "file": "/home/Artem/Documents/projects/dualsenseDriver/Source/main/dualsenseDriver.cpp",
+    "output": "/home/Artem/Documents/projects/dualsenseDriver/Build/main/dualsenseDriver.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-I/home/Artem/Documents/projects/dualsenseDriver/Source/main",
+      "-I/home/Artem/Documents/projects/dualsenseDriver/Source/dualsense",
+      "-I/home/Artem/Documents/projects/dualsenseDriver/Source/utils",
+      "-o",
+      "/home/Artem/Documents/projects/dualsenseDriver/Build/dualsense/dualsense.o",
+      "/home/Artem/Documents/projects/dualsenseDriver/Source/dualsense/dualsense.cpp"
+    ],
+    "directory": "/home/Artem/Documents/projects/dualsenseDriver/Build",
+    "file": "/home/Artem/Documents/projects/dualsenseDriver/Source/dualsense/dualsense.cpp",
+    "output": "/home/Artem/Documents/projects/dualsenseDriver/Build/dualsense/dualsense.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-I/home/Artem/Documents/projects/dualsenseDriver/Source/main",
+      "-I/home/Artem/Documents/projects/dualsenseDriver/Source/dualsense",
+      "-I/home/Artem/Documents/projects/dualsenseDriver/Source/utils",
+      "-o",
+      "/home/Artem/Documents/projects/dualsenseDriver/Build/utils/utils.o",
+      "/home/Artem/Documents/projects/dualsenseDriver/Source/utils/utils.cpp"
+    ],
+    "directory": "/home/Artem/Documents/projects/dualsenseDriver/Build",
+    "file": "/home/Artem/Documents/projects/dualsenseDriver/Source/utils/utils.cpp",
+    "output": "/home/Artem/Documents/projects/dualsenseDriver/Build/utils/utils.o"
+  }
+]

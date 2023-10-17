@@ -1,5 +1,5 @@
 cd Build/
 make clean
-make
+bear -- make
 clear
 ./dualsenseDriver

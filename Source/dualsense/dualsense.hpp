@@ -18,8 +18,14 @@
 
 /*Input commands to dualsense*/
 #define DS_READ_TIMEOUT 1000
+
 #define DS_INPUT_REPORT_BT 0x31
 #define DS_INPUT_REPORT_BT_SIZE 78
+
+#define DS_INPUT_REPORT_USB 0x01
+#define DS_INPUT_REPORT_USB_SIZE 64
+
+#define MIN(a, b) ((a) < (b) ? (a) : (b))
 
 /** @enum dualsenseConnType
  *  @brief
@@ -36,31 +42,6 @@ typedef enum dualsenseConnType_t : uint8_t {
   CONTROLLER_BT,
   CONTROLLER_WIRE
 } dualsenseConnType;
-
-/** @enum powerState
- *  @brief
- *    Enum with types of dualsense power state
- *  @param DISCHARGING
- *    Device discharhing
- *  @param CHARGING
- *    Device charging
- *  @param COMPLETE
- *    Device battery is full
- *  @param ABNORMAL_VOLTAGE
- *    Device voltage is out of range
- *  @param ABNORMAL_TEMPERATURE
- *    Device temperature is out of range
- *  @param CHARGING_ERROR
- *    Device can't charge due aparature error
- */
-typedef enum powerState_t : uint8_t {
-  DISCHARGING = 0x00,
-  CHARGING = 0x01,
-  COMPLETE = 0x02,
-  ABNORMAL_VOLTAGE = 0x0A,
-  ABNORMAL_TEMPERATURE = 0x0B,
-  CHARGING_ERROR = 0x0F
-} powerState;
 
 /** @struct dualsenseBatteryState
  *  @brief
@@ -118,7 +99,7 @@ bool check_connection(dualsense *ds);
 /**
  * Return battery state
  * @param ds pointer to dualsense struct object
- * @ret current battery charge
  */
-int batteryCharge(dualsense *ds);
+void batteryCharge(dualsense *ds);
+void printGamePadState(const USBGetStateData *obj);
 #endif
